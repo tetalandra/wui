@@ -37,8 +37,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <th>password</th>
                 <th>Confirm Password</th>
                 <th>Terms</th>
-                <th>Range</th>
-                <th>Color<th>
+                <th>Form progress</th>
+                <th>Desired color<th>
             </tr>
 
             <tr>
