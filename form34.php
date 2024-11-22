@@ -20,6 +20,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = htmlspecialchars($_POST['password']);
     $confirm_password = htmlspecialchars($_POST['confirmPassword']);
     $terms =isset($_POST['terms']) ? 'Agreed' : 'Not agreed';
+    $range= htmlspecialchars($_POST['range']);
+    $color= htmlspecialchars($_POST['color']);
 }
 
        echo " <table border='1' cellspacing='0'>
@@ -35,6 +37,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <th>password</th>
                 <th>Confirm Password</th>
                 <th>Terms</th>
+                <th>Form progress</th>
+                <th>Desired color<th>
             </tr>
 
             <tr>
@@ -48,6 +52,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <td> $password</td> 
                 <td>$confirm_password</td> 
                 <td>$terms</td>
+                <td>$range</td>
+                <td>$color</td>
                 
         </tr>
         </table>"; 
